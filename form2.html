@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="c-1">
+    <form>
+      <h1>Pemesanan</h1>
+
+      <div class="input-group">
+        <label>Nama</label>
+        <input type="text" placeholder="Masukkan Nama" id="contact-name" onkeyup="validateName()">
+        <span id="name-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Telepon</label>
+        <input type="tel" placeholder="+62" id="contact-phone" onkeyup="validatePhone()">
+        <span id="phone-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>E-mail </label>
+        <input type="email" placeholder="Email" id="contact-email" onkeyup="validateEmail()">
+        <span id="email-error"></span>
+      </div>   
+
+      <div class="input-group">
+        <label> Jumlah Orang </label>
+        <input type="number"> 
+        <span id="jumlah"></span>
+      </div>
+
+      <div class="input-group"> 
+        <label>Tanggal</label>
+        <input type="date">
+        <span id="tanggal-error"></span>
+    </div>
+
+    <button onclick="return validateForm()">Pesan Sekarang</button>
+    <span id="submit-error"> </span>
+   
+  </form>
+  
+  </div>
+   <script src="form.js"></script>
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+   
+</head>
+<body>
+  <div class="c-1">
+    <form name="login">
+      <h1>Login</h1>
+      <div class="input-group">
+     <label for="email">Email</label>
+     <input type="email" name="email" id="email">
+    </div>
+    <div class="input-group">
+     <label for="password">Password</label>
+     <input type="password" name="password" id="password" />
+    </div>
+    <button type="button" onclick="Login()">Login</button>
+    <div class="login-signup">
+      <span class="text">
+        Belum Punya Akun ?
+        <a href="buatakun.html">Daftar Sekarang</a>
+      </span>
+     </div>
+     </form>
+
+  </div>
+
+
+
+  
+<script type="text/javascript"></script>
+
+<script>
+
+ function Login() {
+   var done = 0;
+   var email = document.login.email.value;
+   email = email.toLowerCase();
+   var password = document.login.password.value;
+   password = password.toLowerCase();
+   if (email == "nugrohocn6@gmail.com" && password == "123") {
+       window.open("index.html")
+ } else
+     if  (done == 0){
+     alert("Email/Password yang anda masukan salah!");
+     
+   }
+
+ }
+</script>
+</body>
+</html>

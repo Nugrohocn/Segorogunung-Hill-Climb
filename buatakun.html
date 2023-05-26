@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Akun</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="c-1">
+    <form name="login">
+      <h1>Buat Akun</h1>
+
+    <div class="input-group">
+      <label for="nama">Nama</label>
+      <input type="text" name="nama" id="nama">
+    </div>
+
+    <div class="input-group">
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" />
+    </div>
+
+    <div class="input-group">
+      <label for="password">Create Password</label>
+      <input type="password" name="password" id="password" />
+    </div>
+
+    <div class="input-group">
+      <label for="password">Confirm Password</label>
+      <input type="password" name="password" id="password" />
+    </div>
+
+
+    <button type="button" onclick="Login()">Buat Akun</button>
+    <div class="login-signup">
+      <span class="text">
+        Sudah Punya Akun ?
+        <a href="login.html">Login Sekarang</a>
+      </span>
+     </div>
+     </form>
+
+  </div>
+  <script type="text/javascript"></script>
+
+  <script>
+  
+   function Login() {
+
+     var email = document.login.email.value;
+     email = email.toLowerCase();
+     var password = document.login.password.value;
+     password = password.toLowerCase();
+     if (nama == "nugroho" && email == "nugrohocn6@gmail.com" && password == "123") {
+         window.open("index.html")
+   } else
+       if  (done == 0){
+       alert("Email/Password yang anda masukan salah!");
+       
+     }
+  
+   }
+  </script>
+</body>
+</html>
